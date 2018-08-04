@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:700|Open+Sans');
+
+body{
+    background-color: #00d3ff;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.contact{
+    margin: 0 auto  ;
+    max-width: 1120px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.contact-card{
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    float: right;
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 7px 10px 20px rgba(0, 0, 0, 0.15), 1px 6px 6px rgba(0, 0, 0, 0.24);
+    border-radius: 3px;
+    margin-bottom: 7px;
+}
+
+.heading-contact{
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 37px;
+    text-align: center;
+    color: #00d3ff;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    /*border: #d8d2d4 solid 1px;*/
+    border: 2px solid #e7e7e7;
+    padding: 15px;
+    display: block;
+    margin: 20px auto;
+    transition-duration: .5s;
+    transition: .25s cubic-bezier(0.65, 0.05, 0.14, 0.79);
+    outline-color: #00d3ff;
+    font-family: "Source Sans Pro", 'AnjaliOldLipi', sans-serif;
+    font-size: 18px;
+    color: #656863;
+    text-align: left;
+    height: auto;
+    background: #fcfcfc;
+
+}
+
+textarea{
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #e7e7e7;
+    padding: 15px;
+    display: block;
+    margin: 20px auto;
+    transition-duration: .5s;
+    transition: .25s cubic-bezier(0.65, 0.05, 0.14, 0.79);
+    outline-color: #00d3ff;
+    font-family: "Source Sans Pro", 'AnjaliOldLipi', sans-serif;
+    font-size: 18px;
+    color: #656863;
+    text-align: left;
+    background: #fcfcfc;
+    height: 243px;
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    border-radius: 3px;
+    border: 0;
+    margin: 20px auto;
+    margin-bottom: 0;
+    color: white;
+    background: #00d3ff;
+    font-family: 'Josefin Sans', 'AnjaliOldLipi', cursive, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    outline-color: #00d3ff;
+    display: block;
+    box-sizing: border-box;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    cursor: pointer;
+}
+
+.heading-get{
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    padding-top: 28px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: white;
+}
+
+.sub-heading{
+    margin-top: 20px;
+    font-size: 25px;
+    color: #656863;
+    text-align: center;
+}
