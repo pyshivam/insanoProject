@@ -8,14 +8,34 @@
     <script type="application/javascript" src="scripts/script.js"></script>
 </head>
 <body>
+<section class="nav-hold">
+    <!--<li ><img src="unclouded.png" alt="logo" class="logo"></li>-->
+    <div class="company-name">
+        Insano Downloader
+    </div>
+    <div class="avatar">
+        <a href="signup.html" class="sign-up-btn">
+            <img src="https://secure.gravatar.com/avatar/94bb58a756e8e58aa6cfd8b5ea02bea0?default=https%3A%2F%2Fcloud.digitalocean.com%2Favatars%2Fdefault43.png&secure=true" alt="logo" class="logo"></a>
+    </div>
+    <div>
+        <a href="/authorize" class="auth">Authorize</a>
+    </div>
+    <div>
+        <a href="#" class="t-page">Torrent</a>
+    </div>
+
+</section>
 <section class="holder">
+
     <section class="container torrent">
         <section class="info-get">
             <form action="#" method="post">
                 <label for="m-link">Enter Magnet link</label>
                 <input type="text" id="m-link" required>
+                <label for="m-name">Enter name of file</label>
+                <input type="text" id="m-name" required>
                 <!--<input type="checkbox" checked title="Save to drive.">-->
-                <button type="submit" onclick="move()">Download</button>
+                <button type="submit" onclick="move('torrent')">Download</button>
             </form>
         </section>
     </section>
@@ -24,15 +44,21 @@
             <form action="#" method="post">
                 <label for="link">Enter link</label>
                 <input type="text" id="link" required>
+                <label for="name">Enter name of file</label>
+                <input type="text" id="name" required>
                 <!--<input type="checkbox" checked title="Save to drive.">-->
-                <button type="submit" onclick="move()">Download</button>
+                <button type="submit" onclick="move('drive')">Download</button>
             </form>
         </section>
     </section>
     <section class="container progressbar">
-        progress
+        Save to drive and Download
         <div class="meter">
             <span id="prog" style="width: 100%"></span>
+        </div>
+        Torrent download and save to drive
+        <div class="meter">
+            <span id="m-prog" style="width: 100%"></span>
         </div>
     </section>
 </section>
