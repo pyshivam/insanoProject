@@ -2,19 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insano Downloader</title>
     <link rel="stylesheet" href="style/dashboard.css">
 </head>
 <body>
-<section class="container">
+
+<section class="container torrent">
     <section class="info-get">
         <form action="#" method="post">
-            <label for="link">Enter URL</label>
-            <input type="text" id="link" required>
-            <input type="submit" value="Download">
+            <label for="m-link">Enter Magnet link</label>
+            <input type="text" id="m-link" required>
+            <input type="checkbox" checked title="Save to drive.">
+            <button type="submit">Download</button>
         </form>
     </section>
 </section>
+
+<section class="container drive-1">
+    <section class="info-get">
+        <form action="#" method="post">
+            <label for="link">Enter link</label>
+            <input type="text" id="link" required>
+            <input type="checkbox" checked title="Save to drive.">
+            <button type="submit">Download</button>
+        </form>
+    </section>
+</section>
+
+
 </body>
 </html>
