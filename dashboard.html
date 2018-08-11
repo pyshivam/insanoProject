@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insano Downloader</title>
     <link rel="stylesheet" href="style/dashboard.css">
+    <script type="application/javascript" src="scripts/script.js"></script>
 </head>
 <body>
-
-<section class="container torrent">
-    <section class="info-get">
-        <form action="#" method="post">
-            <label for="m-link">Enter Magnet link</label>
-            <input type="text" id="m-link" required>
-            <input type="checkbox" checked title="Save to drive.">
-            <button type="submit">Download</button>
-        </form>
+<section class="holder">
+    <section class="container torrent">
+        <section class="info-get">
+            <form action="#" method="post">
+                <label for="m-link">Enter Magnet link</label>
+                <input type="text" id="m-link" required>
+                <!--<input type="checkbox" checked title="Save to drive.">-->
+                <button type="submit" onclick="move()">Download</button>
+            </form>
+        </section>
+    </section>
+    <section class="container drive-1">
+        <section class="info-get">
+            <form action="#" method="post">
+                <label for="link">Enter link</label>
+                <input type="text" id="link" required>
+                <!--<input type="checkbox" checked title="Save to drive.">-->
+                <button type="submit" onclick="move()">Download</button>
+            </form>
+        </section>
+    </section>
+    <section class="container progressbar">
+        progress
+        <div class="meter">
+            <span id="prog" style="width: 100%"></span>
+        </div>
     </section>
 </section>
-
-<section class="container drive-1">
-    <section class="info-get">
-        <form action="#" method="post">
-            <label for="link">Enter link</label>
-            <input type="text" id="link" required>
-            <input type="checkbox" checked title="Save to drive.">
-            <button type="submit">Download</button>
-        </form>
-    </section>
-</section>
-
-
 </body>
 </html>
